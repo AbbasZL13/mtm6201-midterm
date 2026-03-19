@@ -252,3 +252,231 @@ nav a:focus {
         grid-column: auto;
     }
 }
+
+/* CTA section */
+.cta {
+    width: 100%;
+}
+
+/* grid layout */
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* each block */
+.cta-item {
+    position: relative;
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* background images */
+.menu {
+    background-image: url("../images/coffee-shop.jpeg");
+}
+
+.locations {
+    background-image: url("../images/coffee-shop.jpeg");
+}
+
+/* dark overlay */
+.cta-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* keep text above overlay */
+.cta-content {
+    position: relative;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+/* heading */
+.cta h2 {
+    font-family: 'Lato', sans-serif;
+    margin: 1rem 0;
+}
+
+/* button base already exists (.btn) */
+
+/* outline button */
+.btn.outline {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+/* hover */
+.btn.outline:hover,
+.btn.outline:focus {
+    background: #d69e3d;
+    border-color: #d69e3d;
+    color: #000000;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+
+    .cta-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta-item {
+        min-height: 400px;
+    }
+}
+
+/* desktop */
+@media (min-width: 1100px) {
+
+    .cta-item {
+        min-height: 500px;
+    }
+}
+
+/* about section */
+.about {
+    background-color: #f3f0e9;
+    padding: 3rem 1rem;
+}
+
+/* layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* image */
+.about-image img {
+    width: 100%;
+    display: block;
+}
+
+/* text */
+.about-content h2 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+}
+
+/* dark button */
+.btn.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn.dark:hover,
+.btn.dark:focus {
+    background-color: #d69e3d;
+    color: #000000;
+}
+
+/* tablet and up */
+@media (min-width: 768px) {
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+/* desktop spacing tweak */
+@media (min-width: 1100px) {
+
+    .about {
+        padding: 4rem 0;
+    }
+}
+
+
+/* testimonials section */
+.testimonials {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 3rem 1rem;
+}
+
+/* heading */
+.testimonials h2 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 2rem;
+}
+
+/* grid */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* each card */
+.testimonial {
+    position: relative;
+}
+
+/* image */
+.testimonial img {
+    width: 100%;
+    display: block;
+}
+
+/* overlay text */
+.testimonial-content {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+/* text */
+.testimonial-content p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-content span {
+    color: #d69e3d;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+
+    .testimonials-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* desktop */
+@media (min-width: 1100px) {
+
+    .testimonials-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* footer */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid #333;
+}
