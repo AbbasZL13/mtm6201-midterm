@@ -53,7 +53,9 @@ nav a:focus {
     color: #d69e3d;
 }
 
-
+/* this section uses a background image instead of an img tag because
+   I need the text and button to sit on top of it and stay centered
+   flexbox helps center everything both vertically and horizontally */
 /* hero section with background image */
 .hero {
     background-image: url("../images/hero-background.jpg");
@@ -141,6 +143,9 @@ nav a:focus {
 }
 
 /* gallery layout - ALWAYS grid */
+/* using grid here because the layout is not a simple row or column
+   I need one large image and four smaller ones placed in exact positions
+   grid gives me full control over rows and columns unlike flexbox */
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -404,7 +409,9 @@ nav a:focus {
     }
 }
 
-
+/* this section uses a background image instead of an img tag because
+   I need the text and button to sit on top of it and stay centered
+   flexbox helps center everything both vertically and horizontally */
 /* testimonials section */
 .testimonials {
     background-color: #000000;
